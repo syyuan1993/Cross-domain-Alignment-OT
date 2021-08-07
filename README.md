@@ -2,15 +2,6 @@
 
 This is the official implementation for BMVC 2020 oral paper [Weakly supervised cross-domain alignment with optimal transport](https://www.bmvc2020-conference.com/assets/papers/0566.pdf).
 
-Please consider citing our paper if you refer to this code in your research.
-'''
-@article{yuan2020weakly,
-  title={Weakly supervised cross-domain alignment with optimal transport},
-  author={Yuan, Siyang and Bai, Ke and Chen, Liqun and Zhang, Yizhe and Tao, Chenyang and Li, Chunyuan and Wang, Guoyin and Henao, Ricardo and Carin, Lawrence},
-  journal={arXiv preprint arXiv:2008.06597},
-  year={2020}
-}
-'''
 
 
 Code largely borrowed from [code](https://github.com/kuanghuei/SCAN).
@@ -66,4 +57,14 @@ evaluation.evalrank_dot_OT("$RUN_PATH/coco_dot/model_best.pth.tar", data_path="$
 ```
 To do cross-validation on MSCOCO, pass `fold5=True` with a model trained using 
 `--data_name coco_precomp`.
-##
+
+### Reference
+
+Please consider citing our paper if you refer to this code in your research.
+
+    @article{yuan2020weakly,
+      title={Weakly supervised cross-domain alignment with optimal transport},
+      author={Yuan, Siyang and Bai, Ke and Chen, Liqun and Zhang, Yizhe and Tao, Chenyang and Li, Chunyuan and Wang, Guoyin and Henao, Ricardo and Carin, Lawrence},
+      journal={arXiv preprint arXiv:2008.06597},
+      year={2020}
+    }
